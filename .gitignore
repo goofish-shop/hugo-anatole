@@ -1,0 +1,10 @@
+demo/
+.hugo/*
+!.hugo/version
+.hugo_build.lock
+/node_modules
+exampleSite/public/
+.DS_Store
+public/
+resources/
+.DS_Store
