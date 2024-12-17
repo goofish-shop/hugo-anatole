@@ -1,8 +1,8 @@
 
-title = "I'm Jane Doe"
-author = "Jane Doe"
+title = "I'm Xin Yu"
+author = "Xin Yu"
 #copyright = "2020-2021"
-description = "Call me Jane"
+description = "University of Hong Kong"
 profilePicture = "images/profile.jpg"
 keywords = ""
 favicon = "favicons/"
@@ -44,10 +44,7 @@ reversepagetitle = true # When set to 'true', the Window Title will be reversed 
 # domain = "example.com"
 # serverURL = "https://analytics.example.com"
 
-[umami]
-# serverURL = "example.com"
-# id = "94db1cb1-74f4-4a40-ad6c-962362670409"
-# trackerScriptName = "mycustomscriptname.js"
+
 
 ## Math settings
 [math]
