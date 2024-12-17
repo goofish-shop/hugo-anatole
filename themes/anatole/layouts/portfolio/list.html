@@ -79,17 +79,20 @@
               {{ end }}
             </ul>
             <p>{{ .description | markdownify }}</p>
-            {{ if .link }}
+            {{ if .links }}
               <div class="portfolio__button-wrapper">
+                {{ range .links }}
                 <a class="portfolio__button" href="{{ .link | safeURL }}" target="_blank" rel="noopener">
-                  {{- if .linktext -}}
-                    {{ .linktext | markdownify }}
+                  {{- if .link_text -}}
+                    {{ .link_text | markdownify }}
                   {{- else -}}
                     Visit Site
                   {{- end -}}
                 </a>
+                {{ end }}
               </div>
             {{ end }}
+            
             <div class="separator">
               {{ range .tags }}
                 <p class="tag">{{ . }}</p>

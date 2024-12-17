@@ -1,22 +1,36 @@
 portfolioitems:
   # portfolio category
-  - title: Coding Projects
-    description: 'All my coding projects'
+  - title: Publications
+    description: 'Click here for compressed view'
     portfolioitem:
-      - name: Project 1
+      - name: 'EXGen: a Generative Diffusion Model for Mesh Textures'
         image: '/images/portfolio/code.jpg'
-        link: https://gohugo.io/
-        linktext: 'Visit project website'
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        link: https://cvmi-lab.github.io/TEXGen/
+        linktext: 'PDF'
+        description: 'While high-quality texture maps are essential for realistic 3D asset rendering, few studies have explored learning directly in the texture space, especially on large-scale datasets. In this work, we depart from the conventional approach of relying on pre-trained 2D diffusion models for test-time optimization of 3D textures. Instead, we focus on the fundamental problem of learning in the UV texture space itself. For the first time, we train a large diffusion model capable of directly generating high-resolution texture maps in a feed-forward manner. To facilitate efficient learning in high-resolution UV spaces, we propose a scalable network architecture that interleaves convolutions on UV maps with attention layers on point clouds. Leveraging this architectural design, we train a 700 million parameter diffusion model that can generate UV texture maps guided by text prompts and single-view images. Once trained, our model naturally supports various extended applications, including text-guided texture inpainting, sparse-view texture completion, and text-driven texture synthesis.'
         tags:
-          - Tag 1
-          - Tag 2
+          - Generative Model
+          - 3D Vision
+          - Large Models
         status: 'Finished'
-        start: '2020'
-        end: '2021'
+        links: 
+          - link: 'https://arxiv.org/abs/2411.14740'
+            link_text: 'PDF'
+          - link: 'https://github.com/CVMI-Lab/TEXGen'
+            link_text: 'CODE'
+          - link: 'https://cvmi-lab.github.io/TEXGen/'
+            link_text: 'PROJECT'
+        # start: '2020'
+        end: '2024'
         authors:
-          - lxndrblz
-          - alexanderdavide
+          - Xin Yu
+          - Ze Yuan
+          - Yuanchen Guo
+          - Yingtian Liu
+          - Jianhui Liu
+          - Yangguang Li
+          - Yanpei Cao
+          - Ding Liang
       - name: Project 2
         image: '/images/portfolio/code.jpg'
         link: https://gohugo.io/
@@ -32,27 +46,4 @@ portfolioitems:
         tags:
           - Tag 1
           - Tag 2
-  # portfolio category
-  - title: Research
-    description: 'All my research projects'
-    portfolioitem:
-      - name: Project 1
-        image: '/images/portfolio/code.jpg'
-        description: 'This project does not have a link attribute'
-        tags:
-          - Tag 1
-          - Tag 2
-      - name: Project 2
-        image: '/images/portfolio/code.jpg'
-        link: https://gohugo.io/
-        description: 'You can click on [**this link**](#codingprojects) to scroll to my Coding Projects portfolio'
-        tags:
-          - Tag 1
-          - Tag 2
-      - name: Project 3
-        image: '/images/portfolio/code.jpg'
-        link: https://gohugo.io/
-        description: 'A description'
-        tags:
-          - Tag 1
-          - Tag 2
+  
