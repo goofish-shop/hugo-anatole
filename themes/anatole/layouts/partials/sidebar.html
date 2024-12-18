@@ -8,9 +8,9 @@
   <div class="sidebar__content">
     <div class="sidebar__introduction">
       <img
-        class="sidebar__introduction-profileimage"
         src="{{ .Site.Params.profilePicture | relURL }}"
         alt="profile picture"
+        style="width: 127px;height: 127px;border-radius: 30%;"
       />
       {{ if .IsHome }}
         <div class="sidebar__introduction-title">
