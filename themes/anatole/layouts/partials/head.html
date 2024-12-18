@@ -146,6 +146,8 @@
 
   <!-- JavaScript -->
   {{ $anatoleHeader := resources.Get "js/anatole-header.js" }}
+  {{ $anatoleHeader := resources.Get "js/customer.js" }}
+
   {{ $secureHeaderJS := $anatoleHeader |  resources.Minify | resources.Fingerprint }}
   <script
     type="text/javascript"

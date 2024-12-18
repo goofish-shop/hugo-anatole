@@ -1,3 +1,5 @@
+
+
 {{ define "main" }}
   {{ $data := index .Site.Data .Site.Language.Lang "portfolio" }}
   {{ if not $data }}{{ $data = .Site.Data.portfolio }}{{ end }}
@@ -14,7 +16,7 @@
 
       <h2 class="portfolio__title" id="{{ $anchorTitle | lower }}">{{ title .title }}</h2>
       {{ if .description }}
-        <h4>{{ .description }}</h4>
+        <h4 onclick="onHide()" id="descript-title-new">{{ .description }} </h4>
       {{ end }}
       {{ range $i, $p := .portfolioitem }}
         <div class="portfolio">
@@ -69,16 +71,18 @@
                 </li>
               {{ end }}
               {{ if .authors }}
-                {{ range .authors }}
-                  <li class="portfolio__meta-item">
-                    <em class="fas fa-at"></em>
-                    <span>{{ . }}</span>
+              <em class="fas fa-pencil"></em>&nbsp
+              {{ $total := len $p.authors }} <!-- Store the total number of authors -->
+              
+              {{ range $index, $author := $p.authors }}
+                      <span class="{{ if or (eq $author "Xin Yu") (eq $author "Xin Yu*") }}portfolio__meta-item-authors-me{{ else }}portfolio__meta-item-authors{{ end }}">{{ $author }}{{ if ne (add $index 1) $total }},  {{ end }}</span>
+                    
                   </li>
-                {{ end }}
+              {{ end }}
 
               {{ end }}
             </ul>
-            <p>{{ .description | markdownify }}</p>
+            <p class="desc-publication">{{ .description | markdownify }}</p>
             {{ if .links }}
               <div class="portfolio__button-wrapper">
                 {{ range .links }}
@@ -105,3 +109,4 @@
   {{ end }}
 
 {{ end }}
+

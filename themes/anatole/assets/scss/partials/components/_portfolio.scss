@@ -140,6 +140,15 @@
       &:not(:last-child) {
         margin-right: 1.25rem;
       }
+      &-authors {
+        
+        // make italic
+        // font-style: italic;
+        &-me{
+          // make bold
+          font-weight: 600;
+        }
+      }
     }
   }
 
