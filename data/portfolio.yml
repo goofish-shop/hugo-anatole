@@ -4,7 +4,6 @@ portfolioitems:
     description: 'Click here for compressed view'
     portfolioitem:
       - name: 'EXGen: a Generative Diffusion Model for Mesh Textures'
-        image: '/images/portfolio/code.jpg'
         link: https://cvmi-lab.github.io/TEXGen/
         linktext: 'PDF'
         description: 'While high-quality texture maps are essential for realistic 3D asset rendering, few studies have explored learning directly in the texture space, especially on large-scale datasets. In this work, we depart from the conventional approach of relying on pre-trained 2D diffusion models for test-time optimization of 3D textures. Instead, we focus on the fundamental problem of learning in the UV texture space itself. For the first time, we train a large diffusion model capable of directly generating high-resolution texture maps in a feed-forward manner. To facilitate efficient learning in high-resolution UV spaces, we propose a scalable network architecture that interleaves convolutions on UV maps with attention layers on point clouds. Leveraging this architectural design, we train a 700 million parameter diffusion model that can generate UV texture maps guided by text prompts and single-view images. Once trained, our model naturally supports various extended applications, including text-guided texture inpainting, sparse-view texture completion, and text-driven texture synthesis.'
@@ -31,19 +30,68 @@ portfolioitems:
           - Yangguang Li
           - Yanpei Cao
           - Ding Liang
-      - name: Project 2
-        image: '/images/portfolio/code.jpg'
-        link: https://gohugo.io/
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      - name: 'Unidream: Unifying diffusion priors for relightable text-to-3d generation'
+        link: https://arxiv.org/abs/2312.08754
+        description: '"Recent advancements in text-to-3D generation technology have significantly advanced the conversion of textual descriptions into imaginative well-geometrical and finely textured 3D objects. Despite these developments, a prevalent limitation arises from the use of RGB data in diffusion or reconstruction models, which often results in models with inherent lighting and shadows effects that detract from their realism, thereby limiting their usability in applications that demand accurate relighting capabilities. To bridge this gap, we present UniDream, a text-to-3D generation framework by incorporating unified diffusion priors. Our approach consists of three main components: (1) a dual-phase training process to get albedo-normal aligned multi-view diffusion and reconstruction models, (2) a progressive generation procedure for geometry and albedo-textures based on Score Distillation Sample (SDS) using the trained reconstruction and diffusion models, and (3) an innovative application of SDS for finalizing PBR generation while keeping a fixed albedo based on Stable Diffusion model. Extensive evaluations demonstrate that UniDream surpasses existing methods in generating 3D objects with clearer albedo textures, smoother surfaces, enhanced realism, and superior relighting capabilities."'
         status: 'On Hold'
         tags:
-          - Tag 1
-          - Tag 2
-      - name: Project 3
-        link: https://gohugo.io/
+          - Generative Model
+          - 3D Vision
+        authors:
+          - Zexiang Liu
+          - Yangguang Li
+          - Xin Yu
+          - Sida Peng
+          - Yan-Pei Cao
+          - Xiaojuan Qi
+          - Xiaoshui Huang
+          - Ding Liang
+          - Wanli 
+          - Ouyang
+        links: 
+          - link: 'https://arxiv.org/abs/2312.08754'
+            link_text: 'PDF'
+          - link: 'https://github.com/YG256Li/UniDream'
+            link_text: 'CODE'
+          - link: 'https://yg256li.github.io/UniDream/'
+            link_text: 'PROJECT'
+      - name: 'Text-to-3D with Classifier Score Distillation'
+        link: https://xinyu-andy.github.io/Classifier-Score-Distillation/
         status: 'Finished'
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        description: 'Text-to-3D generation has made remarkable progress recently, particularly with methods based on Score Distillation Sampling (SDS) that leverages pre-trained 2D diffusion models. While the usage of classifier-free guidance is well acknowledged to be crucial for successful optimization, it is considered an auxiliary trick rather than the most essential component. In this paper, we re-evaluate the role of classifier-free guidance in score distillation and discover a surprising finding, i.e., the guidance alone is enough for effective text-to-3D generation tasks. We name this method Classifier Score Distillation (CSD), which can be interpreted as using an implicit classification model for generation. This new perspective reveals new insights for understanding existing techniques. We validate the effectiveness of CSD across a variety of text-to-3D tasks including shape generation, texture synthesis, and shape editing, achieving results superior to those of state-of-the-art methods.'
         tags:
-          - Tag 1
-          - Tag 2
-  
+          - Generative Model
+          - 3D Vision
+        authors:
+          - Xin Yu
+          - Yuan-Chen Guo
+          - Yangguang Li
+          - Ding Liang
+          - Song-Hai Zhang
+          - Xiaojuan Qi
+        links: 
+          - link: 'https://arxiv.org/abs/2312.08754'
+            link_text: 'PDF'
+          - link: 'https://github.com/YG256Li/UniDream'
+            link_text: 'CODE'
+          - link: 'https://yg256li.github.io/UniDream/'
+            link_text: 'PROJECT'
+      - name: 'Image Inpainting via Iteratively Decoupled Probabilistic Modeling'
+        link: https://arxiv.org/abs/2212.02963
+        status: 'Finished'
+        description: ' Generative adversarial networks (GANs) have made great success in image inpainting yet still have difficulties tackling large missing regions. In contrast, iterative probabilistic algorithms, such as autoregressive and denoising diffusion models, have to be deployed with massive computing resources for decent effect. To achieve high-quality results with low computational cost, we present a novel pixel spread model (PSM) that iteratively employs decoupled probabilistic modeling, combining the optimization efficiency of GANs with the prediction tractability of probabilistic models. As a result, our model selectively spreads informative pixels throughout the image in a few iterations, largely enhancing the completion quality and efficiency. On multiple benchmarks, we achieve new state-of-the-art performance.'
+        tags:
+          - Generative Model
+          - Image Synthesis
+        authors:
+          - Wenbo Li
+          - Xin Yu
+          - Kun Zhou
+          - Yibing Song
+          - Zhe Lin
+          - Jiaya Jia
+        links: 
+          - link: 'https://arxiv.org/abs/2212.02963'
+            link_text: 'PDF'
+
+   

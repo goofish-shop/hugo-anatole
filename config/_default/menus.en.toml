@@ -13,8 +13,8 @@
   [[main]]
   name = "Publication"
   weight = 300
-  identifier = "portfolio"
-  url = "/portfolio/"
+  identifier = "publications"
+  url = "/publications/"
 
   [[main]]
   name = "About"
